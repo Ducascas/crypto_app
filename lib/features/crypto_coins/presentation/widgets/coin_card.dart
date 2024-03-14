@@ -1,5 +1,5 @@
 import 'package:chart_sparkline/chart_sparkline.dart';
-import 'package:crypto_app/features/crypto_coins/domain/entities/coin_entity.dart';
+import 'package:crypto_app/features/crypto_coins/crypto_coins.dart';
 import 'package:flutter/material.dart';
 
 class CoinCard extends StatelessWidget {
