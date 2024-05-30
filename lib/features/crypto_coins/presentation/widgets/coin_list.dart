@@ -27,13 +27,13 @@ class _CoinListState extends State<CoinList> {
         List<Coin> coins = [];
 
         if (state is CoinLoading) {
-          return _progressIndicator();
+          return const Center(child: CircularProgressIndicator());
         } else if (state is CoinLoaded) {
           coins = state.coins;
         }
 
         return ListView.separated(
-          separatorBuilder: _divider,
+          separatorBuilder: const Divider(),
           itemCount: coins.length,
           itemBuilder: (context, index) {
             return CoinCard(coins: coins[index]);
@@ -42,9 +42,3 @@ class _CoinListState extends State<CoinList> {
       },
     );
   }
-
-  Widget _divider(context, index) => const Divider();
-
-  Center _progressIndicator() =>
-      const Center(child: CircularProgressIndicator());
-}
