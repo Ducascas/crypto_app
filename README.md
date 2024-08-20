@@ -14,3 +14,4 @@
 
 Для данных использовался бесплатный API CoinGecko (https://www.coingecko.com/).
 
+
